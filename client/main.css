@@ -1,4 +1,9 @@
+:root{
+  --nomVarCouleur: rgba(250,250,250,1);
+}
+/* Papillon */
 body {
   padding: 10px;
   font-family: sans-serif;
+  color: var(--nomVarCouleur);
 }

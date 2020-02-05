@@ -1,0 +1,127 @@
+:root{
+  --varTailleAvatar: 150px;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+body::after {
+  content: "";
+  background-image: url(Map_background_temp.jpg);
+  opacity: 0.10;
+  right: 0;
+  left: -10;
+  top: -10;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px; /* Check it at some point... To adjust width*/
+  flex-wrap: wrap;
+}
+
+#title {
+  font-family: Rock Salt;
+  margin-top: -10px;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+}
+
+#characterBox {
+  width: 35%;
+  height: 300;
+  background-color: tan;
+  font-family: Forte;
+  padding: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+#characterPrez {
+  height: var(--varTailleAvatar);
+  margin-bottom: 10px;
+}
+
+#characterName {
+  font-family: Jim Nightshade;
+  max-width: 250px;
+  font-size: 50px;
+  margin-bottom: -20px;
+}
+
+#characterInfo {
+  border-top: 2px dotted crimson; /* Maybe the way to align the underline could be... Proper */
+  font-family: Courgette;
+  font-size: 18px;
+  text-align: right;
+}
+
+#characterPicture {
+    width: var(--varTailleAvatar);
+    height: var(--varTailleAvatar);
+    background-color: white;
+}
+
+img.characterAva {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px black;
+}
+
+#characterStats {
+    background-color: wheat;
+    width : 100%;
+    overflow-y: scroll;
+    list-style-type: square;
+    font-size: 18px;
+    height: 140px;
+    padding-left: 10px;
+}
+
+#mapBox {
+  width: 55%;
+  height: 500;
+  background-color: peru;
+  font-family: Calibri;
+  padding: inherit;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+img.mapDisplay {
+  width: 70%;
+  height: 70%;
+  max-height: 100%;
+}
+
+#mapInfo {
+  max-width: 28%;
+  padding: 5px;
+  overflow-y: scroll;
+  font-family: Calibri;
+  height: 68%;
+  text-align: justify;
+}
+
+#elementInfo {
+  width: 98%;
+  padding: 5px;
+  overflow-y: scroll;
+  font-family: Calibri;
+  text-align: justify;
+  max-height: 25%;
+}
